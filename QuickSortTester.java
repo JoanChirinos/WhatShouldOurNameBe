@@ -5,8 +5,11 @@
   2018-03-13
 */
 
+/*
+  Uses FileRW, Joan's generic file reader and Writer
+*/
+
 import java.util.ArrayList;
-import jutils.FileRW;
 
 public class QuickSortTester {
 
