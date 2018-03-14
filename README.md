@@ -23,22 +23,12 @@ Here we can see a nlogn relationship
 <Write stuff here>
 As seen in the data and the graph, the QuickSort has a runtime of O(nlogn) as we had predicted. 
 
-The variance in our graph may be due to the pivot point and the data arrangement. In our QuickSort, we had the pivot point be chosen as a random place between the left and right bounds. This makes it have a higher chance to choose the best case element, decreasing the runtime. The base case being that its final resting position is in the middle, decreasing the amount of elements to be sorted in each division. The arrangement of the data can also have the same effect. However, there is also the chance of choosing the worst case element, increasing the runtime. 
+The variance in our graph may be due to the pivot point and the data arrangement. In our QuickSort, we had the pivot point be chosen as a random place between the left and right bounds. This eliminates the chance of a sorted subarray resulting in a poor runtime. There are possible worst cases with a random pivot point, but it's hard to predict. The best case being that its final resting position is in the middle, decreasing the amount of elements to be sorted in each division.
 
 ### Big Oh classifications for... (at the algorithm level)
 - Best Case = O(nlogn)
-  - Pivot is very close to the median or is the median value of the array.
+  - The random pivot points always end up in the center of their respective subarrays
 - Most Likely Case = O(nlogn)
-  - Pivot is not the smallest or largest, but is not the median aka the pivot is somewhere in between the array.
+  - The random pivot chosen ends up close the the center of its respective subarray, making approximately, but greater than, logn partitions
 - Worst Case = O(n^2)
-  - Pivot is either the smallest or largest value of the array.
-  
-### Pivot Selection/Date Arrangement and How it affects Time
-Must Include:
-- your assessment of QuickSort’s Big-Oh runtime classification, abstracted to the algorithm level, in the
-       best case,
-       average or most likely case, and
-       worst case
-- your time measurements and analysis of same
-- how pivot selection and data arrangement affect execution time.
-
+  - The pivot that is chosen results in the largest amount of partitions, causing a runtime of nlogn
