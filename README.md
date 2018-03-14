@@ -21,6 +21,9 @@ Here we can see a nlogn relationship
 
 ## Conclusions
 <Write stuff here>
+As seen in the data and the graph, the QuickSort has a runtime of O(nlogn) as we had predicted. 
+
+The variance in our graph may be due to the pivot point and the data arrangement. In our QuickSort, we had the pivot point be chosen as a random place between the left and right bounds. This makes it have a higher chance to choose the best case element, decreasing the runtime. The base case being that its final resting position is in the middle, decreasing the amount of elements to be sorted in each division. The arrangement of the data can also have the same effect. However, there is also the chance of choosing the worst case element, increasing the runtime. 
 
 ### Big Oh classifications for...
 - Best Case
