@@ -3,7 +3,7 @@
 #### Team WhatShouldOurNameBe - Rohan Ahammed, Joan Chirinos, Soojin Choi - pd08
 
 ## Hypothesis
-We believe that QuickSort runs at nlogn time on average, but has a worst case of O(n^2).
+We hypothesize that QuickSort runs at nlogn time on average, but has a worst case of O(n^2). This is based upon traces and using the algorithm on different array states and using different pivot points.
 
 ## Background
 The process of building towards QuickSort began with another method: partition. Partition splits an array at a givem index, arr[n], into the values lower than arr[n], arr[n], and the values higher than arr[n]. This runs in O(n) time because it will make n - 1 comparisons.
@@ -25,14 +25,15 @@ As seen in the data and the graph, the QuickSort has a runtime of O(nlogn) as we
 
 The variance in our graph may be due to the pivot point and the data arrangement. In our QuickSort, we had the pivot point be chosen as a random place between the left and right bounds. This makes it have a higher chance to choose the best case element, decreasing the runtime. The base case being that its final resting position is in the middle, decreasing the amount of elements to be sorted in each division. The arrangement of the data can also have the same effect. However, there is also the chance of choosing the worst case element, increasing the runtime. 
 
-### Big Oh classifications for...
-- Best Case
-  - <info>
-- Most Likely Case
-  - <info>
-- Worst Case
-  - <info>
-
+### Big Oh classifications for... (at the algorithm level)
+- Best Case = O(nlogn)
+  - Pivot is very close to the median or is the median value of the array.
+- Most Likely Case = O(nlogn)
+  - Pivot is not the smallest or largest, but is not the median aka the pivot is somewhere in between the array.
+- Worst Case = O(n^2)
+  - Pivot is either the smallest or largest value of the array.
+  
+### Pivot Selection/Date Arrangement and How it affects Time
 Must Include:
 - your assessment of QuickSort’s Big-Oh runtime classification, abstracted to the algorithm level, in the
        best case,
