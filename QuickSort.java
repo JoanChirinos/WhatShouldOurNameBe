@@ -1,8 +1,8 @@
 /*
-  Joan Chirinos
+  WhatShouldOurNameBe
+  Rohan Ahammed, Joan Chirinos, Soojin Choi
   APCS2 pd08
-  HW18 -- So So Quick
-  2018-03-12
+  2018-03-14
 */
 
 /*****************************************************
