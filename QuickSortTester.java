@@ -1,15 +1,20 @@
 /*
-  WhatShouldOurNameBe -- Rohan Ahammed, Joan Chirinos, Soojin Choi
-  APCS2 pd08
-  L01 -- What Does the Data Say?
-  2018-03-13
+WhatShouldOurNameBe -- Rohan Ahammed, Joan Chirinos, Soojin Choi
+APCS2 pd08
+L01 -- What Does the Data Say?
+2018-03-13
 */
-/* Timing Mechanism: Runtime is calculated by calling System.nanonTime() before running QuickSort, and then calling it again after, and using the difference between the two. It is then put into an arraylist (chosen because it is easier to simply AL.add things), into which all of the differences, representing the time it took to run QuickSort, are stored. Background processes and other running applications are minimized, which is achieved to the best of our ability through Activity Monitor on OSX
-
- */
+/*
+  Timing Mechanism: Runtime is calculated by calling System.nanonTime() before running
+  QuickSort, and then calling it again after, and using the difference between the two.
+  It is then put into an arraylist (chosen because it is easier to simply AL.add things),
+  into which all of the differences, representing the time it took to run QuickSort, are
+  stored. Background processes and other running applications are minimized, which is achieved
+  to the best of our ability through Activity Monitor on OSX
+*/
 
 /*
-  Uses FileRW, Joan's generic file reader and Writer
+Uses FileRW, Joan's generic file reader and Writer
 */
 
 import java.util.ArrayList;
