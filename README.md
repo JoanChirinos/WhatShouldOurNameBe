@@ -16,7 +16,8 @@ Additionally, we can see that slightly imperfect runs will have additional coeff
 We have a popArray method which takes an array of size n and populates it with random integers in the range (-100, 100), inclusive of -100. We also have a timer method that returns, as a double, the time, in nanoseconds, QuickSort takes to sort a given array. Our main method initiates an ArrayList used to store array size and times. It runs 2 nested for-loops: one to store an array size variable from 1000 to 40000 (counting up by 100s) and one to run and record the timer method for the given array size 100 times. Ultimately, we get 39100 data points, which we graph using Excel
 
 ## Results
-
+![Graph of data points showing a nlogn relationship](data.png)
+Here we can see a nlogn relationship
 
 ## Conclusions
 <Write stuff here>
