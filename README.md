@@ -27,8 +27,8 @@ The variance in our graph may be due to the pivot point and the data arrangement
 
 ### Big Oh classifications for... (at the algorithm level)
 - Best Case = O(nlogn)
-  - The random pivot points always end up in the center of their respective subarrays
+  - The random pivot points always end up in the center of their respective subarrays, running partition about 2nlogn times
 - Most Likely Case = O(nlogn)
   - The random pivot chosen ends up close the the center of its respective subarray, making approximately, but greater than, logn partitions
 - Worst Case = O(n^2)
-  - The pivot that is chosen results in the largest amount of partitions, causing a runtime of nlogn
+  - The pivot that is chosen results in the largest amount of partitions, causing a runtime of O(n^2)
